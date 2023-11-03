@@ -29,8 +29,7 @@ Open the server and add 10 student users
 Include your code here
 
 ## OUTPUT
-![Alt text](studentuser.png)
-
+![image](https://github.com/marcoyoi/django-orm-app/assets/128804366/1fe006f6-f118-4997-8d49-b46807cb135a)
 
 ## RESULT
 We have succesfully created 10 student users as a superuser
