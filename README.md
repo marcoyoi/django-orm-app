@@ -25,8 +25,29 @@ Now we run the program using the code python manage.py runserver 0:8000
 Open the server and add 10 student users
 
 ## PROGRAM
+```py
+#From admin.py
+from django.contrib import admin
+from .models import Student,StudentAdmin
+# Register your models here.
+admin.site.register(Student,StudentAdmin)
 
-Include your code here
+
+#From models.py
+from django.db import models
+from django.contrib import admin
+
+# Create your models here.
+
+class Student (models.Model):
+    referenceno=models.CharField(primary_key=True,max_length=20,help_text="referenceno")
+    name=models.CharField(max_length=100)
+    age=models.IntegerField()
+    email=models.EmailField()
+    mobileno=models.IntegerField()
+class StudentAdmin (admin.ModelAdmin):
+    list_display=('referenceno','name','age','email','mobileno')
+```
 
 ## OUTPUT
 ![Alt text](studentuser.png)
