@@ -29,7 +29,8 @@ Open the server and add 10 student users
 Include your code here
 
 ## OUTPUT
-![Alt_text](./studentuser.png)
+![Alt text](studentuser.png)
+
 
 ## RESULT
 We have succesfully created 10 student users as a superuser
